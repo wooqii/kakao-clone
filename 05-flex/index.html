@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flex</title>
+  </head>
+  <style media="screen">
+  html, body{
+    height: 100%;
+  }
+  .father{
+    display: flex;
+    /* 수평을 맞춰주는 justify-content */
+    justify-content: space-between;
+    /* 수직을 맞춰주는 align-items */
+    align-items: flex-start;
+    /* flex 적용되는 element의 방향을 설정하는 flex-direction */
+    flex-direction: column-reverse;
+    height: 100%;
+    /* 폭을 고정시켜주는 flex-wrap */
+    flex-wrap: nowrap;
+  }
+    .box{
+      background-color: red;
+      width: 200px;
+      height: 200px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+  </style>
+  <body>
+<div class="father">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>
+  <div class="box">4</div>
+  <div class="box">5</div>
+  <div class="box">6</div>
+  <div class="box">7</div>
+  <div class="box">8</div>
+  <div class="box">9</div>
+  <div class="box">10</div>
+</div>
+  </body>
+</html>

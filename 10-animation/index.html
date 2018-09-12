@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Transformation</title>
+    <style media="screen">
+      .box{
+        width: 300px;
+        height: 300px;
+        background-color: red;
+        animation: 3s scaleAndRotateSquare infinite ease-in-out;
+      }
+      /* 애니메이션이 두단계만 있을 경우. */
+      @keyframes identifier {
+        from {
+
+        }
+        to {
+
+        }
+      }
+      /* 애니메이션이 진행률 별로 다를 경우. */
+      @keyframes scaleAndRotateSquare {
+        0%{
+          transform: none;
+        }
+        50%{
+          transform: rotate(1turn) scale(.5, .5);
+          background-color: blue;
+        }
+        100%{
+          transform: none;
+          background-color: white;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+
+    </div>
+  </body>
+</html>
